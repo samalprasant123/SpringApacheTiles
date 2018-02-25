@@ -1,1 +1,1 @@
-<p>Footer goes here</p>
+<p>© 2018 Prasant Samal All rights reserved.</p>

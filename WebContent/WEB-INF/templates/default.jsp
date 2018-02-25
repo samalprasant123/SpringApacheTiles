@@ -6,26 +6,25 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title><tiles:getAsString name="title" /></title>
+<link
+	href="${pageContext.request.contextPath}/static/css/create-offer.css"
+	rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="${pageContext.request.contextPath}/static/jquery/jquery-3.3.1.min.js"></script>
 </head>
 <body>
 
-	<table>
-		<tr>
-			<td colspan="2">
-				<tiles:insertAttribute name="header"></tiles:insertAttribute>
-			</td>
-		</tr>
-		<tr>
-			<td>
-				<tiles:insertAttribute name="body"></tiles:insertAttribute>
-			</td>
-		</tr>
-		<tr>
-			<td colspan="2">
-				<tiles:insertAttribute name="footer"></tiles:insertAttribute>
-			</td>
-		</tr>
-	</table>
+	<div class="header">
+		<tiles:insertAttribute name="header"></tiles:insertAttribute>
+	</div>
+	
+	<div class="content">
+		<tiles:insertAttribute name="body"></tiles:insertAttribute>
+	</div>
+	
+	<hr>
+	<div class="footer">
+		<tiles:insertAttribute name="footer"></tiles:insertAttribute>
+	</div>
 
 </body>
 </html>

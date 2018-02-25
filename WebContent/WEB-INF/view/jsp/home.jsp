@@ -26,23 +26,6 @@
 			Offer</a>
 	</p>
 	
-	<sec:authorize access="!isAuthenticated()">
-		<p>
-			<a href="<c:url value="/login"/>">Login</a>
-		</p>
-	</sec:authorize>
-
-	<sec:authorize access="isAuthenticated()">
-		<p>
-			<c:url var="logoutUrl" value="/logout"/>
-			<form action="${logoutUrl}" method="post" id="logout123">
-	    		<!-- <input type="submit" value="Logout"/> -->
-	    		<a href="#" onclick="document.getElementById('logout123').submit();">Logout</a>
-	    		<input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
-			</form>		
-		</p>
-	</sec:authorize>
-	
 	<sec:authorize access="hasRole('ADMIN')">
 		<p>		
 			<a href="<c:url value="/admin" />">Admin</a>
