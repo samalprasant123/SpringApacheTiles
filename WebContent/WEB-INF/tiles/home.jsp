@@ -4,19 +4,8 @@
 <%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 
-<html>
-
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Apache Tiles Home</title>
-</head>
-
-<body>
-	<h2 align="center">Welcome to Apache Tiles App</h2>
+	<h2 align="center">Welcome to Offers App</h2>
 	<hr>
-	<br>
-	<br>
-	<br>
 	<p>
 		<a href="${pageContext.request.contextPath}/offers">Show current
 			offers</a>
@@ -31,7 +20,3 @@
 			<a href="<c:url value="/admin" />">Admin</a>
 		</p>
 	</sec:authorize>
-	
-</body>
-
-</html>

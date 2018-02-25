@@ -3,12 +3,6 @@
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="sf"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-<head>
-<link
-	href="${pageContext.request.contextPath}/static/css/create-offer.css"
-	rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="${pageContext.request.contextPath}/static/jquery/jquery-3.3.1.min.js"></script>
 
 <script type="text/javascript">
 function onLoad() {
@@ -49,10 +43,6 @@ function matchPassword() {
 $(document).ready(onLoad);
 </script>
 
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>New Account</title>
-</head>
-<body>
 	<h2>Create New Account</h2>
 	<sf:form id="userForm" method="post"
 		action="${pageContext.request.contextPath}/createaccount"
@@ -84,7 +74,7 @@ $(document).ready(onLoad);
 			</tr>
 			<tr>
 				<td class="label">Confirm Password:</td>
-				<td><input id="cpassword" class="control" type="password" name="cpassword"
+				<td><input id="cpassword" class="control" type="password" name="cpassword" 
 					placeholder="Enter password again" />
 					<div id="matchpass" style="margin-left: 10px;"></div>
 				 </td>
@@ -95,5 +85,3 @@ $(document).ready(onLoad);
 			</tr>
 		</table>
 	</sf:form>
-</body>
-</html>
